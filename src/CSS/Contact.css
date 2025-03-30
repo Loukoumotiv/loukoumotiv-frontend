@@ -1,0 +1,149 @@
+/* HERO */
+
+.hero-bg-contact {
+    background-image: url(../assets/contact-hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.trois-blocs-contact div {
+    height: 275px;
+}
+
+/* FORM */
+
+.contact-container {
+    margin-top: 100px;
+    column-gap: 40px;
+}
+
+.quotation-container {
+    width: 60%;
+}
+
+.info-container {
+    width: 40%;
+}
+
+.quotation-container h4,
+.info-container h4 {
+    margin: 30px 0;
+}
+
+.quotation-container form {
+    row-gap: 10px;
+    margin-bottom: 100px;
+}
+
+.quotation-container .form-control.border-dark {
+    border: 1px solid #c8a2c8 !important;
+}
+
+.quotation-container .form-check-input {
+    border: 1px solid #000 !important;
+}
+
+input[type="radio"]:checked {
+    background-color: #8C5CBC;
+    color: #c8a2c8;
+}
+
+.quotation-container textarea {
+    resize: none;
+}
+
+.quotation-container button {
+    width: 15%;
+}
+
+.form-floating>label {
+    white-space: normal;
+    width: calc(100% - 1.5rem);
+}
+
+.submit-quotation {
+    width: fit-content !important;
+}
+
+.contact-container input:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+.contact-container textarea:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .prestation-input {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero-bg-contact {
+        background-image: url(../assets/contact-mobile-hero.png);
+    }
+    
+    /* QUOTATION */
+
+    .contact-container {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .quotation-container {
+        width: 100%;
+    }
+
+    .info-container {
+        width: 100%;
+    }
+
+    .prestation-input {
+        flex-direction: column;
+    }
+
+    .quotation-container form {
+        row-gap: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-bg-contact {
+        background-image: url(../assets/contact-mobile-hero.png);
+    }
+
+    /* QUOTATION */
+
+    .contact-container {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .quotation-container {
+        width: 100%;
+    }
+
+    .info-container {
+        width: 100%;
+    }
+
+    .prestation-input {
+        flex-direction: column;
+    }
+
+    .quotation-container form {
+        row-gap: 20px;
+        margin-bottom: 0;
+    }
+}
