@@ -4,7 +4,6 @@ import Header from '../Frequents/Header';
 import MobileHeader from '../Frequents/MobileHeader';
 import HeroHomepage from '../HomepageComponents/HeroHomepage';
 import BienfaitsHomepage from '../HomepageComponents/BienfaitsHomepage';
-import BannerHomepage from '../HomepageComponents/BannerHomepage';
 import ClientsHomepage from '../HomepageComponents/ClientsHomepage';
 import Footer from '../Frequents/Footer';
 import MobileFooter from '../Frequents/MobileFooter';
@@ -15,7 +14,7 @@ function Homepage() {
     }, []);
 
     return (
-        <div>
+        <div style={{caretColor: "transparent"}}>
             <div className='hero-bg-homepage'>
                 <div className='d-none d-md-block'>
                     <Header />
@@ -26,7 +25,6 @@ function Homepage() {
                 <HeroHomepage />
             </div>
             <BienfaitsHomepage />
-            <BannerHomepage />
             <ClientsHomepage />
             <div className='d-none d-md-block'>
                 <Footer />

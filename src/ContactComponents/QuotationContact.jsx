@@ -68,7 +68,7 @@ function QuotationContact() {
                                         value={formData.Nom_complet}
                                         onChange={handleInputChange}
                                         placeholder=""
-                                        className="form-control border-dark"
+                                        className="form-control border-dark with-caret"
                                         required
                                     />
                                     <Label for="Nom_complet" className="form-label">
@@ -85,7 +85,7 @@ function QuotationContact() {
                                         value={formData.Entreprise}
                                         onChange={handleInputChange}
                                         placeholder=""
-                                        className="form-control border-dark"
+                                        className="form-control border-dark with-caret"
                                         required
                                     />
                                     <Label for="Entreprise" className="form-label">
@@ -104,7 +104,7 @@ function QuotationContact() {
                                         value={formData.Email}
                                         onChange={handleInputChange}
                                         placeholder=" "
-                                        className="form-control border-dark"
+                                        className="form-control border-dark with-caret"
                                         required
                                     />
                                     <Label for="Email" className="form-label">
@@ -126,7 +126,7 @@ function QuotationContact() {
                                         value={formData.Telephone}
                                         onChange={handleInputChange}
                                         placeholder=" "
-                                        className="form-control border-dark"
+                                        className="form-control border-dark with-caret"
                                         required
                                     />
                                     <Label for="Telephone" className="form-label">
@@ -193,7 +193,7 @@ function QuotationContact() {
                                         value={formData.Message}
                                         onChange={handleInputChange}
                                         placeholder=""
-                                        className="form-control border-dark"
+                                        className="form-control border-dark with-caret"
                                         required
                                     />
                                     <Label for="Message" className="form-label">
@@ -213,7 +213,7 @@ function QuotationContact() {
                                         value={formData.Canal}
                                         onChange={handleInputChange}
                                         placeholder=""
-                                        className="form-control border-dark"
+                                        className="form-control border-dark with-caret"
                                         required
                                     />
                                     <Label for="Canal" className="form-label">
@@ -241,7 +241,7 @@ function QuotationContact() {
                 <h4>Écrivez-nous</h4>
                 <p>Découvrez comment nous adaptons nos services pour créer un environnement relaxant répondant à vos besoins.</p>
                 <div className="footer-social-media d-flex flex-column">
-                    <a href="tel:+33611073140"><img src={Téléphone} alt="0611073140" />06 11 07 31 40</a>
+                    <a href="tel:+33780974828"><img src={Téléphone} alt="0780974828" />07 80 97 48 28</a>
                     <a href="mailto:loukoumotiv@gmail.com"><img src={Mail} alt="loukoumotiv@gmail.com" />loukoumotiv@gmail.com</a>
                 </div>
             </div>

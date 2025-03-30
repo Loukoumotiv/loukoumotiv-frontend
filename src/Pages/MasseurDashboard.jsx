@@ -12,7 +12,7 @@ function MasseurDashboard() {
       }, []);
       
     return (
-        <div>
+        <div style={{caretColor: "transparent"}}>
             <DashHeader />
             <div className='container'>
                 <NavMasseurDash />

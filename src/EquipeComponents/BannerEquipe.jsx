@@ -9,46 +9,59 @@ function BannerEquipe() {
     const teamData = [
         {
             name: 'Antoine Baudin',
+            titre: 'Ostéopathe D.O.',
+            lieu: 'Paris 19',
+            site: 'https://www.doctolib.fr/osteopathe/paris/antoine-baudin',
             imageSrc: '../equipe/Antoine.png',
         },
         {
-            name: 'Titouan De Luca',
-            imageSrc: '../equipe/Titouan.png',
-        },
-        {
             name: 'Margaux Liurette',
-            imageSrc: '../equipe/Margaux.jpg',
+            titre: 'Etudiante Ostéopathe',
+            lieu: 'CSO Paris',
+            site: 'https://www.smartagenda.fr/pro/cso/rendez-vous/',
+            imageSrc: '../equipe/Margaux_LIURETTE.jpg',
         },
         {
-            name: 'Vincent Céron',
-            imageSrc: '../equipe/Vincent.png',
+            name: 'Joachim Bloch',
+            titre: 'Ostéopathe D.O.',
+            lieu: 'Paris 15',
+            site: 'https://www.doctolib.fr/osteopathe/paris/joachim-bloch',
+            imageSrc: '../equipe/Joachim_BLOCH.jpg',
         },
         {
-            name: 'Ombeline De La Bourdonnaye',
-            imageSrc: '../equipe/Ombeline.jpg',
+            name: 'Océane Olivier',
+            titre: 'Ostéopathe D.O.',
+            lieu: 'Vanves',
+            site: 'https://www.doctolib.fr/osteopathe/paris/oceane-olivier',
+            imageSrc: '../equipe/Oceane_OLIVIER_osteo.jpg',
         },
         {
-            name: 'Grégory Richard',
-            imageSrc: '../equipe/Gregory.jpg',
+            name: 'Sophie Delaplane',
+            titre: 'Massothérapeute Bien être',
+            lieu: 'Clamart',
+            site: 'https://sophiedelaplane2.wixsite.com/massage-avec-sophie',
+            imageSrc: '../equipe/Sophie_DELAPLANE.jpg',
         },
         {
-            name: 'Hugo Haas',
-            imageSrc: '../equipe/Hugo.jpeg',
-        },
-        {
-            name: 'Jean-Gabriel Davis',
-            imageSrc: '../equipe/JeanGabriel.png',
-        },
+            name: 'Emma Chesneau',
+            titre: 'Etudiante Ostéopathe',
+            lieu: 'CSO Paris',
+            site: 'https://www.smartagenda.fr/pro/cso/rendez-vous/',
+            imageSrc: '../equipe/Emma_CHESNEAU.jpg',
+        }
     ]
 
     const renderTeam = () => {
         const loopedData = [...teamData, ...teamData, ...teamData];
         const endIndex = Math.min(startIndex + 4, loopedData.length);
         return loopedData.slice(startIndex, endIndex).map((team, index) => (
-            <div key={index} className='equipe-member d-flex flex-column align-items-center'>
-                <img src={team.imageSrc} alt={team.name}/>
-                <h6 className='text-white'>{team.name}</h6>
-            </div>
+            <a className='equipe-a' target="_blank" rel="noopener noreferrer" href={team.site}>
+                <div key={index} className='equipe-member d-flex flex-column align-items-center'>
+                    <img src={team.imageSrc} alt={team.name} title="Prendre rdv"/>
+                    <h6 className='text-white'>{team.name}</h6>
+                    <p className='text-center font-italic'>{team.titre} ({team.lieu})</p>
+                </div>
+            </a>
         ));
     };
 

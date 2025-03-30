@@ -20,7 +20,7 @@ function NewsletterDash() {
     const [contactToUnsubscribe, setContactToUnsubscribe] = useState(null);
     const [showSubscribeModal, setShowSubscribeModal] = useState(false);
     const [email, setEmail] = useState('');
-    const [validationMessage, setValidationMessage] = useState('');
+    const validationMessage = '';
 
     useEffect(() => {
         const fetchData = async () => {
@@ -34,10 +34,6 @@ function NewsletterDash() {
         };
         fetchData();
     }, [dispatch])
-
-    // setTimeout(() => {
-    //     console.log("newsletter", newsletter);
-    // }, 5000);
 
     const toggleUnsubscribeModal = (Id, email) => {
         setContactToUnsubscribe({ Id, email });
@@ -117,7 +113,7 @@ function NewsletterDash() {
                             </tr>
                         ) : (newsletter && newsletter.map((contact) => (
                             <tr key={contact._id}>
-                                <td scope="row">{contact.email}</td>
+                                <th scope="row">{contact.email}</th>
                                 <td>
                                     <img className='table-action-icon' src={remove} alt="supprimer" onClick={() => { toggleUnsubscribeModal(contact._id, contact.email) }} />
                                 </td>

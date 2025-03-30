@@ -26,10 +26,6 @@
 
 /* BANNER */
 
-.loukoumBG-container {
-    background-color: #8C5CBC;
-}
-
 .loukoum-container {
     column-gap: 50px;
 }
@@ -40,12 +36,113 @@
 }
 
 .loukoum-meaning {
-    color: #FFF;
+    /* color: #FFF; */
+    color:#8C5CBC;
     font-size: 20px;
 }
 
 .loukoum-meaning p {
     line-height: 30px;
+}
+
+/* Actions*/
+.actions {
+    padding: 75px;
+    padding-top: 30px;
+    background-image: url(../assets/background.PNG);
+    background-repeat:no-repeat;
+    background-size: 100% 50%;
+}
+
+.actions-title {
+    justify-content: right;
+    color:white;
+    margin-bottom: 75px;
+}
+
+.actions-container {
+    position: relative
+}
+
+.actions-top-left-line {
+    width: 50%;
+    margin-bottom: 50px
+}
+
+.actions-top-right-line {
+    width: 33%;
+    margin-bottom: 50px
+}
+
+.actions-text {
+    padding:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(203,203,203);
+    border-radius: 5px;
+    color:#8C5CBC;
+    text-align: center;
+    width: fit-content
+}
+
+.actions-text p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.actions-top-text {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.actions-bottom {
+    position: absolute;
+    top: 85%;
+    display: flex;
+    align-items: center;
+}
+
+/* Mon martin */
+.monMartin {
+    padding: 75px;
+}
+
+.loukoumBG-text p {
+    color: #8C5CBC;
+}
+
+.loukoumBG-text h2 {
+    color: #8C5CBC;
+}
+
+.monMartin-column-title {
+    width: 40%;
+}
+
+.monMartin-column-text {
+    width: 60%;
+}
+
+.monMartin-offre {
+    background-color: #bc96e1;
+    padding: 10px;
+    margin: 10px;
+    text-align: center
+}
+
+.monMartin-atelier {
+    border-top-left-radius: 70px;
+    padding-left: 5px;
+}
+
+.monMartin-plateforme {
+    border-bottom-right-radius: 70px;
+}
+
+.monMartin-offre p {
+    color:#FFF
 }
 
 /* TESTIMONIAL */
@@ -66,17 +163,67 @@
 
 /* RESPONSIVE */
 
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) {
+    .monMartin-offre {
+        width: 33%;
+    }
+    .actions-first-line {
+        width: 66%;
+    }
+    .actions-second-line-div {
+        width: 25%;
+        margin-left: 15%
+    }
+    .monMartin {
+        padding: 50px;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .action {
+        padding: 75px;
+        padding-top: 30px;
+        background-image: url(../assets/background.PNG);
+        background-repeat:no-repeat;
+        background-size: 100% 33%;
+    }
     .chaise-photo {
         padding-top: 50px;
+    }
+    .actions-second-line-div {
+        width: 50%;
+    }
+    .monMartin-offre {
+        width: 400px;
+    }
+    
+    .monMartin-container {
+        flex-direction: column;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+    .action {
+        padding: 75px;
+        padding-top: 30px;
+        background-image: url(../assets/background.PNG);
+        background-repeat:no-repeat;
+        background-size: 100% 17%;
+    }
     .hero-bg-concept {
         background-image: url(../assets/concept-mobile-hero.png);
+    }
+    .monMartin-container {
+        flex-direction: column;
+    }
+    .actions-first-line {
+        flex-direction: column;
+    }
+    .actions-second-line {
+        flex-direction: column;
+    }
+    .actions-second-line-div {
+        margin-bottom: 50px
     }
 
     .offre-container {
@@ -109,6 +256,10 @@
 @media (max-width: 575.98px) {
     .hero-bg-concept {
         background-image: url(../assets/concept-mobile-hero.png);
+    }
+
+    .monMartin-container {
+        flex-direction: column;
     }
 
     .offre-container {

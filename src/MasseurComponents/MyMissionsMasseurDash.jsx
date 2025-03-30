@@ -14,33 +14,12 @@ import see_details from '../assets/icones/voir_noir.png';
 function MyMissionsMasseurDash() {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions);
-  const token = localStorage.getItem('token');
   const [loading, setLoading] = useState(true);
   const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [showDropModal, setShowDropModal] = useState(false);
   const [missionToSee, setMissionToSee] = useState({});
   const [missionToDrop, setMissionToDrop] = useState(null);
   const LoggedMemberId = getUserID();
-
-  const [title, setTitle] = useState(missionToSee.title || '');
-  const [status, setStatus] = useState(missionToSee.status || '');
-  const [partner, setPartner] = useState(missionToSee.partner || '');
-  const [type, setType] = useState(missionToSee.type || '');
-  const [time, setTime] = useState({
-    date: missionToSee.date || '',
-    hours: [missionToSee.hours || ''],
-  });
-  const [description, setDescription] = useState(missionToSee.description || '');
-  const [location, setLocation] = useState({
-    place: missionToSee.place || '',
-    number: missionToSee.number || '',
-    street: missionToSee.street || '',
-    ZIPcode: missionToSee.ZIPcode || '',
-    city: missionToSee.city || '',
-  });
-  const [remuneration, setRemuneration] = useState(missionToSee.remuneration || '');
-  const [requiredMembers, setRequiredMembers] = useState(missionToSee.requiredMembers || '');
-  const [capacity, setCapacity] = useState(missionToSee.capacity || '');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -53,7 +32,7 @@ function MyMissionsMasseurDash() {
       }
     };
     fetchData();
-  }, [dispatch])
+  }, [dispatch, LoggedMemberId])
 
   // setTimeout(() => {
   //   console.log("missions", missions);
@@ -63,12 +42,6 @@ function MyMissionsMasseurDash() {
     setMissionToSee(mission);
     setShowDetailsModal(!showDetailsModal)
   }
-
-  const handleSee = () => {
-    if (missionToSee && missionToSee._id) {
-      setShowDetailsModal(false);
-    }
-  };
 
   const toggleDropModal = (Id, title) => {
     setMissionToDrop({ Id, title });
@@ -109,7 +82,7 @@ function MyMissionsMasseurDash() {
               ) : (
                 missions.map((mission) => (
                   <tr key={mission._id}>
-                    <td scope="row">{mission.title}</td>
+                    <th scope="row">{mission.title}</th>
                     <td>{(() => {
                       switch (mission.status) {
                         case 'to do':

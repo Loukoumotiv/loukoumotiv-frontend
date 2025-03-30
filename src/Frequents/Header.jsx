@@ -34,7 +34,7 @@ function Header() {
     useEffect(() => {
         const loggedIn = token;
         setIsLoggedIn(loggedIn);
-    }, []);
+    }, [token]);
 
     const navigateToRole = (role) => {
         if (role === "admin") {

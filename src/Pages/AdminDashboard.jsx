@@ -16,7 +16,7 @@ function AdminDashboard() {
       }, []);
       
     return (
-        <div>
+        <div style={{caretColor: "transparent"}}>
             <AdminHeader />
             <div className='container'>
                 <NavAdminDash />

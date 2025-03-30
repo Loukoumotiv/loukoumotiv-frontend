@@ -54,7 +54,6 @@ function AllMissionsAdminDash() {
   const [partner, setPartner] = useState(missionToEdit.partner?.name || '');
   const [capacity, setCapacity] = useState(missionToEdit.capacity || '');
   const [requiredMembers, setRequiredMembers] = useState(missionToEdit.requiredMembers || '');
-  const [registeredMembers, setRegisteredMembers] = useState([missionToEdit.registeredmembers?.fullName || '']);
   const [remuneration, setRemuneration] = useState(missionToEdit.remuneration || '');
   const [status, setStatus] = useState(missionToEdit.status || '');
   const [teamBilling, setTeamBilling] = useState(missionToEdit.teamBilling || '');
@@ -74,8 +73,6 @@ function AllMissionsAdminDash() {
     };
     fetchData();
   }, [dispatch])
-
-  const partnerIds = partners.map(partner => partner._id);
 
   const toggleEditModal = (mission) => {
     setMissionToEdit(mission);
@@ -284,7 +281,7 @@ console.log("location: ", location)
                 : (missions &&
                   missions.map((mission) => (
                     <tr key={mission._id} className={mission.requiredMembers === mission.registeredMembers?.length ? "full-mission-admin" : ""}>
-                      <td scope="row">{mission.title}</td>
+                      <th scope="row">{mission.title}</th>
                       <td>{(() => {
                         switch (mission.status) {
                           case 'to do':

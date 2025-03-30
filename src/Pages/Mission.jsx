@@ -15,7 +15,7 @@ function Mission() {
       }, []);
       
     return (
-        <div>
+        <div style={{caretColor: "transparent"}}>
             <div className='hero-bg-mission'>
                 <div className='d-none d-md-block'>
                     <Header />

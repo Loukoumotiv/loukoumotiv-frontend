@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { subscribeToNewsletter } from '../redux/actions/newsletter'
 import { Link, useNavigate } from "react-router-dom";
 import { getUserRole } from "../userInfo/getTeamData";
@@ -26,7 +26,6 @@ function MobileHeader() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const dispatch = useDispatch();
-    const newsletter = useSelector((state) => state.newsletter);
     const [email, setEmail] = useState('');
 
     const toggleMenu = () => {
@@ -73,7 +72,7 @@ function MobileHeader() {
     useEffect(() => {
         const loggedIn = token;
         setIsLoggedIn(loggedIn);
-    }, []);
+    }, [token]);
 
     const navigateToRole = (role) => {
         if (role === "admin") {

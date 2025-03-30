@@ -15,7 +15,7 @@ function Equipe() {
       }, []);
 
     return (
-        <div>
+        <div style={{caretColor: "transparent"}}>
             <div className='hero-bg-equipe'>
                 <div className='d-none d-md-block'>
                     <Header />

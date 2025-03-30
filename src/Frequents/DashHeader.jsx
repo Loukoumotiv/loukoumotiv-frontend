@@ -24,7 +24,6 @@ function DashHeader() {
     const [phoneNumber, setPhoneNumber] = useState(loggedMemberInfo.phoneNumber || '');
     const [email, setEmail] = useState(loggedMemberInfo.email || '');
     const [password, setPassword] = useState(loggedMemberInfo.password || '');
-    const [confirmPassword, setConfirmPassword] = useState('');
     const [dateOfBirth, setDateOfBirth] = useState(loggedMemberInfo.dateOfBirth || '');
     const [number, setNumber] = useState(loggedMemberInfo.number || '');
     const [street, setStreet] = useState(loggedMemberInfo.street || '');
@@ -81,7 +80,7 @@ function DashHeader() {
             const updatedDrivingLicense = Boolean(drivingLicense);
             const updatedMotorized = Boolean(motorized);
 
-            if (password != '') {
+            if (password !== '') {
                 try {
                     const formData = new FormData();
                     formData.append('fullName', updatedFullName);
@@ -99,7 +98,7 @@ function DashHeader() {
                     formData.append('motorized', updatedMotorized);
                     formData.append('password', password)
 
-                    const response = await axios.put(`${process.env.REACT_APP_URL}/team/update/${loggedMemberId}`, formData, {
+                    await axios.put(`${process.env.REACT_APP_URL}/team/update/${loggedMemberId}`, formData, {
                         headers: {
                             'Content-Type': 'application/json',
                             'Authorization': `Bearer ${token}`,
@@ -134,7 +133,7 @@ function DashHeader() {
                     formData.append('drivingLicense', updatedDrivingLicense);
                     formData.append('motorized', updatedMotorized);
 
-                    const response = await axios.put(`${process.env.REACT_APP_URL}/team/update/${loggedMemberId}`, formData, {
+                    await axios.put(`${process.env.REACT_APP_URL}/team/update/${loggedMemberId}`, formData, {
                         headers: {
                             'Content-Type': 'application/json',
                             'Authorization': `Bearer ${token}`,

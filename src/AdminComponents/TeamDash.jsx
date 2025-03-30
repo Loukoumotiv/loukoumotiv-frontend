@@ -204,9 +204,9 @@ function TeamDash() {
               </tr>
             ) : (team && team.map((teamMember) => (
               <tr key={teamMember._id}>
-                <td scope="row">{teamMember.fullName}</td>
+                <th scope="row">{teamMember.fullName}</th>
                 <td>{teamMember.email}</td>
-                <td>{teamMember.city && teamMember.ZIPcode && teamMember.city != 'undefined' && teamMember.ZIPcode != 'undefined' ? `${teamMember.city}, ${teamMember.ZIPcode}` : '-'}</td>
+                <td>{teamMember.city && teamMember.ZIPcode && teamMember.city !== 'undefined' && teamMember.ZIPcode !== 'undefined' ? `${teamMember.city}, ${teamMember.ZIPcode}` : '-'}</td>
                 <td>{teamMember.drivingLicense ? "oui" : "non"}, {teamMember.motorized ? "oui" : "non"}</td>
                 <td>{teamMember.role}</td>
                 <td>
@@ -282,21 +282,21 @@ function TeamDash() {
                         <div className="row">
                           <div className="col-md-6">
                             <Label for="fullAddress">N°</Label>
-                            <Input type="text" placeholder={memberToEdit.number != "undefined" ? memberToEdit.number : ''} onChange={(e) => setNumber(e.target.value)} bsSize="sm" />
+                            <Input type="text" placeholder={memberToEdit.number !== "undefined" ? memberToEdit.number : ''} onChange={(e) => setNumber(e.target.value)} bsSize="sm" />
                           </div>
                           <div className="col-md-6">
                             <Label for="fullAddress">Rue</Label>
-                            <Input type="text" placeholder={memberToEdit.street != "undefined" ? memberToEdit.street : ''} onChange={(e) => setStreet(e.target.value)} bsSize="sm" />
+                            <Input type="text" placeholder={memberToEdit.street !== "undefined" ? memberToEdit.street : ''} onChange={(e) => setStreet(e.target.value)} bsSize="sm" />
                           </div>
                         </div>
                         <div className="row">
                           <div className="col-md-6">
                             <Label for="fullAddress">Code postal</Label>
-                            <Input type="text" placeholder={memberToEdit.ZIPcode != "undefined" ? memberToEdit.ZIPcode : ''} onChange={(e) => setZIPcode(e.target.value)} bsSize="sm" />
+                            <Input type="text" placeholder={memberToEdit.ZIPcode !== "undefined" ? memberToEdit.ZIPcode : ''} onChange={(e) => setZIPcode(e.target.value)} bsSize="sm" />
                           </div>
                           <div className="col-md-6">
                             <Label for="fullAddress">Ville</Label>
-                            <Input type="text" placeholder={memberToEdit.city != "undefined" ? memberToEdit.city : ''} onChange={(e) => setCity(e.target.value)} bsSize="sm" />
+                            <Input type="text" placeholder={memberToEdit.city !== "undefined" ? memberToEdit.city : ''} onChange={(e) => setCity(e.target.value)} bsSize="sm" />
                           </div>
                         </div>
                       </FormGroup>
@@ -307,7 +307,7 @@ function TeamDash() {
                     <div className="col-md-6">
                       <FormGroup>
                         <Label for="instagram">Instagram (@)</Label>
-                        <Input type="text" placeholder={memberToEdit.instagram != "undefined" ? memberToEdit.instagram : ''} onChange={(e) => setInstagram(e.target.value)} bsSize="sm" />
+                        <Input type="text" placeholder={memberToEdit.instagram !== "undefined" ? memberToEdit.instagram : ''} onChange={(e) => setInstagram(e.target.value)} bsSize="sm" />
                       </FormGroup>
                     </div>
                     <div className="col-md-6">
@@ -325,13 +325,13 @@ function TeamDash() {
                     <div className="col-md-6">
                       <FormGroup>
                         <Label for="siret">Siret</Label>
-                        <Input type="text" placeholder={memberToEdit.siret != "undefined" ? memberToEdit.siret : ''} onChange={(e) => setSiret(e.target.value)} bsSize="sm" />
+                        <Input type="text" placeholder={memberToEdit.siret !== "undefined" ? memberToEdit.siret : ''} onChange={(e) => setSiret(e.target.value)} bsSize="sm" />
                       </FormGroup>
                     </div>
                     <div className="col-md-6">
                       <FormGroup>
                         <Label for="IBAN">IBAN</Label>
-                        <Input type="text" placeholder={memberToEdit.IBAN != "undefined" ? memberToEdit.IBAN : ''} onChange={(e) => setIBAN(e.target.value)} bsSize="sm" />
+                        <Input type="text" placeholder={memberToEdit.IBAN !== "undefined" ? memberToEdit.IBAN : ''} onChange={(e) => setIBAN(e.target.value)} bsSize="sm" />
                       </FormGroup>
                     </div>
                   </div>

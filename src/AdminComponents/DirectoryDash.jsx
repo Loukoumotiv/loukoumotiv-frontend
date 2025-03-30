@@ -161,7 +161,7 @@ function DirectoryDash() {
             ) : (
               directory.map((contact) => (
                 <tr key={contact._id}>
-                  <td scope="row">{contact.fullName}</td>
+                  <th scope="row">{contact.fullName}</th>
                   <td>{contact.email}</td>
                   <td>{contact.phoneNumber}</td>
                   <td>{contact.position}</td>

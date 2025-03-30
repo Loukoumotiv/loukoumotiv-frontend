@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../CSS/Equipe.css';
 import '../CSS/General.css';
 import '../CSS/bootstrap.min.css';
@@ -6,24 +6,19 @@ import '../CSS/bootstrap.min.css';
 function CoreEquipe() {
     const coreTeamData = [
         {
-            name: 'Glenn Saliba',
+            name: 'Glenn SALIBA',
             position: `Fondatrice de Loukoumotiv’ et ostéopathe`,
-            imageSrc: '../equipe/Glenn.png',
+            imageSrc: '../equipe/Glenn_SALIBA.jpg',
         },
         {
-            name: 'Aurélien Chatenet',
-            position: `Responsable logistique et practicien en massage`,
-            imageSrc: '../equipe/Aurelien.png',
+            name: 'Océane OLIVIER',
+            position: `Responsable ressources humaines et ostéopathe`,
+            imageSrc: '../equipe/Oceane_OLIVIER.jpg',
         },
         {
-            name: 'Nolwenn Chevalier',
-            position: `Responsable équipe et practicienne en massage`,
-            imageSrc: '../equipe/Nolwenn.JPG',
-        },
-        {
-            name: 'Cassandra Seyi',
-            position: `Responsable partenariats et marketing`,
-            imageSrc: '../equipe/Cassandra.jpg',
+            name: 'Daphné ROUX',
+            position: `Responsable communication`,
+            imageSrc: '../equipe/Daphne_ROUX.JPG',
         },
     ]
 

@@ -15,15 +15,15 @@ function BienfaitsHomepage() {
                     <div className='bullets-bienfaits'>
                         <div className='d-flex'>
                             <img className='loukoum-icon' src={loukoum} alt="loukoum" />
-                            <p>un massage intuitif, personnalisé et unique à chaque masseur pour chaque massé</p>
+                            <p>une détente ciblée du corps physique</p>
                         </div>
                         <div className='d-flex'>
                             <img className='loukoum-icon' src={loukoum} alt="loukoum" />
-                            <p>un massage ergonomique, sur une chaise pour utiliser le poids de corps et préserver la posture des masseurs</p>
+                            <p>un moment de pause pour le corps mental</p>
                         </div>
                         <div className='d-flex'>
                             <img className='loukoum-icon' src={loukoum} alt="loukoum" />
-                            <p>des conseils pour la suite et partage d’outils d’auto-relaxation</p>
+                            <p>un gain d'énergie pour mieux repartir</p>
                         </div>
                     </div>
                     <Link to='/concept'><button className='mauve-button en-savoir-plus'>En savoir plus</button></Link>

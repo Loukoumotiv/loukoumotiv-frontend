@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { subscribeToNewsletter } from '../redux/actions/newsletter'
 import '../CSS/Homepage.css';
 import '../CSS/General.css';
@@ -15,7 +15,6 @@ import LinkedIn from '../assets/icones/linkedin_blanc.png';
 
 function Footer() {
     const dispatch = useDispatch();
-    const newsletter = useSelector((state) => state.newsletter);
     const [email, setEmail] = useState('');
 
     const handleInputChange = (e) => {
@@ -48,14 +47,14 @@ function Footer() {
                         <span>© Loukoumotiv’ 2024.</span>
                     </div>
                     <div>
-                        <ul className='footer-li'>
-                            <li>Notre vision</li>
-                            <li>Notre équipe</li>
-                            <li>Votre projet</li>
-                            <li>Nous rejoindre</li>
+                        <ul className="footer-li">
+                            <Link to='/concept'><li>Notre vision</li></Link>
+                            <Link to='/equipe'><li>Notre équipe</li></Link>
+                            <Link to='/contact'><li>Votre projet</li></Link>
+                            <Link to='/se-connecter'><li>Nous rejoindre</li></Link>
                         </ul>
                         <div className="footer-social-media d-flex flex-column">
-                            <a href="tel:+33611073140"><img src={Téléphone} alt="0611073140" />06 11 07 31 40</a>
+                            <a href="tel:+33780974828"><img src={Téléphone} alt="0780974828" />07 80 97 48 28</a>
                             <a href="mailto:loukoumotiv@gmail.com"><img src={Mail} alt="loukoumotiv@gmail.com" />loukoumotiv@gmail.com</a>
                         </div>
                     </div>

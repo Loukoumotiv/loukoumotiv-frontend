@@ -64,7 +64,7 @@ function JoinFormLogin() {
                                         value={formData.Nom_complet}
                                         onChange={handleInputChange}
                                         placeholder=""
-                                        className="form-control border-dark"
+                                        className="form-control border-dark with-caret"
                                         required
                                     />
                                     <Label for="Nom_complet" className="form-label">
@@ -81,7 +81,7 @@ function JoinFormLogin() {
                                         value={formData.Email}
                                         onChange={handleInputChange}
                                         placeholder=" "
-                                        className="form-control border-dark"
+                                        className="form-control border-dark with-caret"
                                         required
                                     />
                                     <Label for="Email" className="form-label">
@@ -105,7 +105,7 @@ function JoinFormLogin() {
                                         value={formData.Telephone}
                                         onChange={handleInputChange}
                                         placeholder=" "
-                                        className="form-control border-dark"
+                                        className="form-control border-dark with-caret"
                                         required
                                     />
                                     <Label for="Telephone" className="form-label">
@@ -122,7 +122,7 @@ function JoinFormLogin() {
                                         value={formData.Localisation}
                                         onChange={handleInputChange}
                                         placeholder=" "
-                                        className="form-control border-dark"
+                                        className="form-control border-dark with-caret"
                                         required
                                     />
                                     <Label for="Localisation" className="form-label">
@@ -142,7 +142,7 @@ function JoinFormLogin() {
                                         value={formData.Message}
                                         onChange={handleInputChange}
                                         placeholder=""
-                                        className="form-control border-dark"
+                                        className="form-control border-dark with-caret"
                                         required
                                     />
                                     <Label for="Message" className="form-label">
@@ -170,7 +170,7 @@ function JoinFormLogin() {
                 <h4>Nous rejoindre</h4>
                 <p>Tu souhaites travailler en équipe et partager ta passion du bien-être à travers tes massages personnalisés ? L'équipe Loukoumotiv' te tend la main !</p>
                 <div className="footer-social-media d-flex flex-column">
-                    <a href="tel:+33611073140"><img src={Téléphone} alt="0611073140" />06 11 07 31 40</a>
+                    <a href="tel:+33615903174"><img src={Téléphone} alt="0615903174" />06 15 90 31 74</a>
                     <a href="mailto:loukoumotiv@gmail.com"><img src={Mail} alt="loukoumotiv@gmail.com" />loukoumotiv@gmail.com</a>
                 </div>
             </div>

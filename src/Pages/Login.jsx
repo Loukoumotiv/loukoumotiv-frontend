@@ -14,7 +14,7 @@ function Login() {
       }, []);
 
     return (
-        <div>
+        <div style={{caretColor: "transparent"}}>
             <div className='hero-bg-login'>
                 <div className='d-none d-md-block'>
                     <Header />

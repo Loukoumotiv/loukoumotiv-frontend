@@ -15,17 +15,17 @@ function HeroContact() {
             <div className='d-flex justify-content-center trois-blocs trois-blocs-contact'>
                 <div>
                     <img src={corporate} alt="corporatif" />
-                    <p className='text-center'>Corporatif</p>
+                    <p className='text-center font-bold'>Corporatif</p>
                     <p className='text-center font-italic'>Vous avez envie d’une session de massage assis dans vos locaux ? Nous œuvrons à l’amélioration de votre qualité de vie et du bien-être au travail !</p>
                 </div>
-                <div>
+                <div className='third-bloc'>
                     <img src={event} alt="événementiel" />
-                    <p className='text-center'>Événementiel</p>
+                    <p className='text-center font-bold'>Événementiel</p>
                     <p className='text-center font-italic'>Vous organisez un événement et vous souhaitez une animation humaine avec une bulle de bien-être pour vos invités ?  Embarquez à bord de notre Loukoumotiv’ !</p>
                 </div>
                 <div className='third-bloc'>
                     <img src={social} alt="social" />
-                    <p className='text-center'>Social</p>
+                    <p className='text-center font-bold'>Social</p>
                     <p className='text-center font-italic'>Vous dirigez une association à but non lucratif, œuvrez pour un service d’intérêt général ? Contactez-nous pour un partenariat !</p>
                 </div>
             </div>

@@ -190,7 +190,7 @@ function PartnersDash() {
               </tr>
             ) : (partners && partners.map((partner) => (
               <tr key={partner._id}>
-                <td scope="row">{partner.name}</td>
+                <th scope="row">{partner.name}</th>
                 <td>{partner.type}</td>
                 <td>{partner.location ? (partner.location.city + ' ' + partner.location.ZIPcode) : '-'}</td>
                 <td>{partner.referenceContact ? (partner.referenceContact.name + ', ' + partner.referenceContact.position) : '-'}</td>

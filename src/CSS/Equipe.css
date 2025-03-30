@@ -9,21 +9,17 @@
     position: relative;
 }
 
-.trois-blocs-equipe div {
-    height: 275px;
-}
-
 /* CORE TEAM */
 
 .core-team {
     margin-top: 150px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .core-team img {
     width: 200px;
     height: 225px;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 10px;
 }
 
@@ -57,20 +53,22 @@
 }
 
 .equipe-slider img {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     height: 200px;
     width: 175px;
     object-fit: cover;
 }
 
 .equipe-slider h6 {
-    margin-bottom: 50px;
     color: #FFF;
 }
 
 .equipe-member {
-    color: #FFF;
-    row-gap: 20px;
+    color: #FFF;    
+}
+
+.equipe-a {
+    text-decoration: none;
 }
 
 /* INSTAGRAM */

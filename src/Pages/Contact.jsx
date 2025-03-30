@@ -13,7 +13,7 @@ function Contact() {
       }, []);
       
     return (
-        <div>
+        <div style={{caretColor: "transparent"}}>
             <div className='hero-bg-contact'>
                 <div className='d-none d-md-block'>
                     <Header />

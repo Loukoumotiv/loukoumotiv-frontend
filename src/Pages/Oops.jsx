@@ -12,7 +12,7 @@ function Oops() {
     }, []);
 
     return (
-        <div>
+        <div style={{caretColor: "transparent"}}>
             <div className='hero-bg-oops'>
                 <div className='d-none d-md-block'>
                     <Header />

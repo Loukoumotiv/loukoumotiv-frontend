@@ -28,26 +28,6 @@ function AllMissionsMasseurDash() {
   const [missionToDrop, setMissionToDrop] = useState(null);
   const LoggedMemberId = getUserID();
 
-  const [title, setTitle] = useState(missionToSee.title || '');
-  const [status, setStatus] = useState(missionToSee.status || '');
-  const [partner, setPartner] = useState(missionToSee.partner || '');
-  const [type, setType] = useState(missionToSee.type || '');
-  const [time, setTime] = useState({
-    date: missionToSee.date || '',
-    hours: [missionToSee.hours || ''],
-  });
-  const [description, setDescription] = useState(missionToSee.description || '');
-  const [location, setLocation] = useState({
-    place: missionToSee.place || '',
-    number: missionToSee.number || '',
-    street: missionToSee.street || '',
-    ZIPcode: missionToSee.ZIPcode || '',
-    city: missionToSee.city || '',
-  });
-  const [remuneration, setRemuneration] = useState(missionToSee.remuneration || '');
-  const [requiredMembers, setRequiredMembers] = useState(missionToSee.requiredMembers || '');
-  const [capacity, setCapacity] = useState(missionToSee.capacity || '');
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -135,7 +115,7 @@ function AllMissionsMasseurDash() {
                   missions &&
                   missions.map((mission) => (
                     <tr key={mission._id} className={mission.requiredMembers === mission.registeredMembers.length ? "full-mission-masseur" : ""}>
-                      <td scope="row">{mission.title}</td>
+                      <th scope="row">{mission.title}</th>
                       <td>{mission.partner.name}</td>
                       <td>{mission.type}</td>
                       <td>{new Date(mission.time.date).toLocaleDateString("en-GB")}</td>
