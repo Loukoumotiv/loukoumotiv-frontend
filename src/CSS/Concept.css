@@ -180,7 +180,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .action {
+    .actions {
         padding: 75px;
         padding-top: 30px;
         background-image: url(../assets/background.PNG);
@@ -203,7 +203,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .action {
+    .actions {
         padding: 75px;
         padding-top: 30px;
         background-image: url(../assets/background.PNG);
@@ -254,6 +254,27 @@
 }
 
 @media (max-width: 575.98px) {
+    .actions {
+        padding: 75px;
+        padding-top: 30px;
+        background-image: url(../assets/background.PNG);
+        background-repeat:no-repeat;
+        background-size: 100% 17%;
+    }
+    
+    .monMartin-container {
+        flex-direction: column;
+    }
+    .actions-first-line {
+        flex-direction: column;
+    }
+    .actions-second-line {
+        flex-direction: column;
+    }
+    .actions-second-line-div {
+        margin-bottom: 50px
+    }
+
     .hero-bg-concept {
         background-image: url(../assets/concept-mobile-hero.png);
     }

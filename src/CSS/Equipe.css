@@ -52,6 +52,10 @@
     cursor: pointer;
 }
 
+.arrows-after {
+    color:#8C5CBC
+}
+
 .equipe-slider img {
     margin-bottom: 10px;
     height: 200px;
@@ -111,7 +115,6 @@
 
     .equipe-member {
         flex: 0 0 calc(50% - 20px);
-        max-width: calc(50% - 20px);
         box-sizing: border-box;
         text-align: center;
     }
@@ -146,7 +149,6 @@
 
     .equipe-member {
         flex: 0 0 calc(50% - 20px);
-        max-width: calc(50% - 20px);
         box-sizing: border-box;
         text-align: center;
     }
@@ -171,11 +173,11 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+        flex-direction: column;
     }
 
     .equipe-member {
         flex: 0 0 calc(50% - 20px);
-        max-width: calc(50% - 20px);
         box-sizing: border-box;
         text-align: center;
     }
@@ -183,6 +185,10 @@
     .equipe-slider img {
         height: 175px;
         width: 150px;
+    }
+
+    .arrows-after {
+        color:white
     }
 
     .follow-us {

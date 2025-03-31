@@ -92,6 +92,15 @@ function BannerEquipe() {
             <div className='container d-flex justify-content-between align-items-center equipe-slider'>
                 {renderTeam()}
             </div>
+                <div className='d-flex equipe-arrows arrows-after'>
+                    <p onClick={handlePrevious} disabled={startIndex === 0}>
+                        &lt;
+                    </p>
+                    <p
+                        onClick={handleNext} disabled={startIndex >= teamData.length - 5}>
+                        &gt;
+                    </p>
+                </div>
         </div>
     );
 }

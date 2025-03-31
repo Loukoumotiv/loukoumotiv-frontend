@@ -16,7 +16,7 @@ function CoreEquipe() {
             imageSrc: '../equipe/Oceane_OLIVIER.jpg',
         },
         {
-            name: 'Daphné ROUX',
+            name: 'Daphnée ROUX',
             position: `Responsable communication`,
             imageSrc: '../equipe/Daphne_ROUX.JPG',
         },
