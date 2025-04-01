@@ -114,7 +114,7 @@ function MobileHeader() {
                     <div className="container-fluid sidebar-bottom footer-bg d-flex flex-column footer-mobile d-md-none">
 
                         <div className="footer-social-media d-flex flex-column">
-                            <a href="tel:+33611073140"><img src={Téléphone} alt="0611073140" />06 11 07 31 40</a>
+                            <a href="tel:+33780974828"><img src={Téléphone} alt="0780974828" />07 80 97 48 28</a>
                             <a href="mailto:loukoumotiv@gmail.com"><img src={Mail} alt="loukoumotiv@gmail.com" />loukoumotiv@gmail.com</a>
                         </div>
 
